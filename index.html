@@ -1,106 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f5f0e7" />
-  <meta name="description" content="The wedding invitation of Keerthana and Parthiban — 12 February 2027, Mayiladuthurai." />
-  <title>Keerthana & Parthiban | Wedding Invitation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6eddb">
+<meta name="description" content="A wedding celebration — Keerthana & Parthiban, February 2027.">
+<title>Keerthana & Parthiban — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="petal petal-one">✿</div><div class="petal petal-two">✿</div>
-  <header class="topbar"><span>॥ शुभमस्तु ॥</span><span class="topbar-flower">❀</span><span>12 · 02 · 2027</span></header>
+<div class="petal-field" aria-hidden="true"></div>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-ornament">❧</div>
-      <p class="eyebrow">WITH THE BLESSINGS OF OUR ELDERS</p>
-      <div class="ganesha">ॐ</div>
-      <p class="eyebrow">JOYFULLY INVITE YOU TO CELEBRATE</p>
-      <h1>Keerthana <span>&</span><br>Parthiban</h1>
-      <p class="hero-line">Two hearts. One beautiful beginning.</p>
-      <div class="hero-image-wrap">
-        <img src="assets/ai-wedding-portrait.png" alt="Illustrated traditional wedding portrait of Keerthana and Parthiban" class="hero-image">
-        <div class="image-caption">A little story, a lifetime of love</div>
-      </div>
-      <a class="enter-link" href="#invitation">EXPLORE OUR INVITATION <span>↓</span></a>
-    </section>
+<!-- Interactive ceremonial entrance -->
+<section class="door-screen" id="doorScreen" aria-label="Welcome">
+  <div class="door-heading">
+    <div class="om">ॐ</div>
+    <p class="eyebrow">SRI MUTHU MARIYAMMAN THUNAI</p>
+    <h1>A Celebration<br><i>of Love</i></h1>
+    <p class="door-sub">A new chapter begins. Come, be part of our story.</p>
+  </div>
+  <div class="door-stage">
+    <div class="door-glow"></div>
+    <div class="door-left"><span class="door-carving">❀<br>❧<br>ॐ<br>❧<br>❀</span><span class="door-knob"></span></div>
+    <div class="door-right"><span class="door-carving">❀<br>❧<br>ॐ<br>❧<br>❀</span><span class="door-knob"></span></div>
+    <div class="door-center">✧</div>
+  </div>
+  <button class="open-button" id="openDoors">Open the doors <span>✦</span></button>
+  <p class="tiny-note">Tap to enter our wedding celebration</p>
+</section>
 
-    <section class="invitation section" id="invitation">
-      <div class="section-mark">✧</div>
-      <p class="eyebrow">WITH THE BLESSINGS OF SRI MUTHU MARIYAMMAN</p>
-      <h2>Wedding Invitation</h2>
-      <div class="ornament-line"><span>❀</span></div>
-      <p class="family">Mrs. R. Chithra<br><span>and</span><br>Mr. R. Rajasekaran</p>
-      <p class="small-note">Director (Agriculture), Hoima Sugar Ltd., Uganda</p>
-      <p class="invite-copy">Request the pleasure of your esteemed presence with family and friends on the occasion of the marriage of their daughter</p>
-      <h3>R. Keerthana <small>B.E.</small></h3>
-      <p class="with">with</p>
-      <h3>N. Parthiban <small>M.Tech.</small></h3>
-      <p class="small-note">(Son of Mrs. N. Bhuvaneswari &amp; Mr. S. Natarajan, Chidambaram)</p>
-    </section>
+<header class="nav">
+  <a class="brand" href="#home">K <span>✦</span> P</a>
+  <nav><a href="#story">Our Story</a><a href="#invitation">Invitation</a><a href="#celebration">Celebration</a><a href="#gallery">Gallery</a></nav>
+  <button class="music-button" id="musicToggle" aria-pressed="false"><span class="music-icon">♫</span><span id="musicLabel">Play music</span></button>
+</header>
 
-    <section class="date-section section">
-      <p class="eyebrow">SAVE THE DATE</p>
-      <h2>Our Wedding</h2>
-      <div class="date-card">
-        <p class="weekday">FRIDAY</p>
-        <div class="date-number">12</div>
-        <p class="month">FEBRUARY <span>2027</span></p>
-        <div class="thin-rule"></div>
-        <p class="time">8:30 AM – 10:00 AM</p>
-        <p class="venue">Signature Mahal</p>
-        <p class="city">Mayiladuthurai</p>
-        <a class="text-link" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Signature+Mahal+Mayiladuthurai">VIEW LOCATION ↗</a>
-      </div>
-      <div class="countdown" aria-live="polite">
-        <p class="eyebrow">COUNTING THE DAYS</p>
-        <div class="count-grid">
-          <div><strong id="days">---</strong><span>Days</span></div>
-          <div><strong id="hours">--</strong><span>Hours</span></div>
-          <div><strong id="minutes">--</strong><span>Minutes</span></div>
-          <div><strong id="seconds">--</strong><span>Seconds</span></div>
-        </div>
-      </div>
-    </section>
+<main id="mainContent">
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">WITH THE BLESSINGS OF OUR ELDERS</p>
+    <div class="ornament">❧ ✦ ❧</div>
+    <h1>Keerthana <em>&</em><br>Parthiban</h1>
+    <p class="subtitle">Two hearts, one beautiful beginning.</p>
+    <p class="hero-date">11 & 12 FEBRUARY 2027 <span>·</span> MAYILADUTHURAI</p>
+    <a class="gold-link" href="#invitation">DISCOVER THE INVITATION <span>↓</span></a>
+  </div>
+  <div class="hero-art">
+    <img src="temple-wedding.png" alt="Illustrated Hindu wedding couple in traditional attire with a South Indian temple backdrop">
+    <div class="art-stamp">॥ மங்களம் ॥</div>
+  </div>
+  <div class="hero-bottom">A DAY TO REMEMBER <span>✦</span> A LIFETIME TOGETHER</div>
+</section>
 
-    <section class="reception section">
-      <p class="eyebrow">LET'S CELEBRATE TOGETHER</p>
-      <h2>Reception</h2>
-      <div class="reception-card">
-        <span class="small-flower">✿</span>
-        <p class="weekday">THURSDAY</p>
-        <h3>11 February 2027</h3>
-        <p class="time">7:00 PM onwards</p>
-        <p class="small-note">We look forward to celebrating this special evening with you.</p>
-      </div>
-    </section>
+<section class="story section" id="story">
+  <p class="eyebrow">A LITTLE GLIMPSE INTO OUR WORLD</p>
+  <h2>Our story, <i>our forever</i></h2>
+  <p class="story-text">Some moments become memories. Some memories become a lifetime. We are beginning our forever, and it would mean the world to have you beside us.</p>
+  <div class="story-pair">
+    <figure><img src="temple-wedding.png" alt="Keerthana and Parthiban in traditional wedding attire"><figcaption>Rooted in tradition</figcaption></figure>
+    <figure><img src="romantic-wedding.png" alt="Keerthana and Parthiban in a romantic celebration portrait"><figcaption>Written in the stars</figcaption></figure>
+  </div>
+</section>
 
-    <section class="gallery section">
-      <p class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</p>
-      <h2>Our Moments</h2>
-      <div class="gallery-grid">
-        <img src="assets/couple-1.jpg" alt="Keerthana and Parthiban together" loading="lazy">
-        <img src="assets/couple-2.jpg" alt="A close-up selfie of the couple" loading="lazy">
-        <img src="assets/couple-3.jpg" alt="A happy moment together" loading="lazy">
-      </div>
-    </section>
+<section class="invitation section" id="invitation">
+  <div class="invitation-card">
+    <div class="ganesha">ॐ</div>
+    <p class="eyebrow">SRI MUTHU MARIYAMMAN THUNAI</p>
+    <h2>Wedding Invitation</h2>
+    <div class="divider">❀</div>
+    <p class="parents">Mrs. R. Chithra <span>and</span> Mr. R. Rajasekaran</p>
+    <p class="small">Director (Agriculture), Hoima Sugar Ltd., Uganda.</p>
+    <p class="invite-copy">Request the pleasure of your esteemed presence with family and friends on the occasion of the marriage of their daughter</p>
+    <h3>R. Keerthana <small>B.E.</small></h3>
+    <p class="with">with</p>
+    <h3>N. Parthiban <small>M.Tech.</small></h3>
+    <p class="small">(S/o Mrs. N. Bhuvaneswari &amp; Mr. S. Natarajan, Chidambaram.)</p>
+    <div class="event-grid" id="celebration">
+      <article><span class="event-icon">♢</span><p class="eyebrow">THE WEDDING</p><h4>Friday, 12th February 2027</h4><p>Between 8:30 a.m. and 10:00 a.m.</p><strong>Signature Mahal</strong><p>Mayiladuthurai</p><a target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Signature+Mahal+Mayiladuthurai">VIEW MAP ↗</a></article>
+      <article><span class="event-icon">✧</span><p class="eyebrow">THE RECEPTION</p><h4>Thursday, 11th February 2027</h4><p>7:00 p.m. onwards.</p><strong>Reception</strong><p>Venue details to follow</p></article>
+    </div>
+    <p class="compliment-label">With best compliments from</p>
+    <p class="compliments">R. Rahul, U.S.A. &nbsp; | &nbsp; C. Preethi Rahul<br>Baby: Samridhi Iyla Rahul</p>
+  </div>
+</section>
 
-    <section class="blessings section">
-      <div class="section-mark">❀</div>
-      <h2>Your Presence<br>Is Our Present</h2>
-      <p>With best compliments from</p>
-      <div class="compliments">R. Rahul, U.S.A.<br>C. Preethi Rahul<br>Baby: Samridhi Iyla Rahul</div>
-      <p class="closing">We can't wait to celebrate with you!</p>
-      <div class="names">Keerthana <span>&</span> Parthiban</div>
-      <p class="final-date">12 · 02 · 2027</p>
-    </section>
-  </main>
-  <footer>MADE WITH LOVE · KEERTHANA &amp; PARTHIBAN</footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="romance section">
+  <div class="romance-image"><img src="romantic-wedding.png" alt="Couple in wedding suits and lehenga-inspired attire in a romantic floral setting"></div>
+  <div class="romance-copy"><p class="eyebrow">A PROMISE OF FOREVER</p><h2>Every love story<br>is beautiful. <i>Ours is ours.</i></h2><p>We can't wait to celebrate this special beginning with the people who make our lives brighter.</p><a href="#gallery" class="gold-link">SEE OUR MOMENTS ↓</a></div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <p class="eyebrow">A FEW FRAMES FROM OUR STORY</p><h2>Moments <i>to cherish</i></h2>
+  <div class="gallery-grid">
+    <button class="photo" data-image="temple-wedding.png" aria-label="View temple wedding illustration"><img src="temple-wedding.png" alt="Temple wedding illustration"><span>Tradition</span></button>
+    <button class="photo" data-image="romantic-wedding.png" aria-label="View romantic wedding illustration"><img src="romantic-wedding.png" alt="Romantic wedding illustration"><span>Romance</span></button>
+    <button class="photo" data-image="original-invitation.png" aria-label="View original invitation artwork"><img src="original-invitation.png" alt="Original illustrated wedding invitation"><span>The invitation</span></button>
+  </div>
+  <p class="gallery-hint">Tap any picture to view it up close.</p>
+</section>
+
+<section class="closing section">
+  <div class="closing-flower">✿</div><p class="eyebrow">YOUR PRESENCE IS OUR PRESENT</p>
+  <h2>Join us as we begin<br><i>forever.</i></h2>
+  <p>With love and warm regards,</p><div class="signature">Keerthana <span>&</span> Parthiban</div>
+  <p class="closing-date">11 & 12 · FEBRUARY · 2027</p>
+  <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">BACK TO THE BEGINNING ↑</button>
+</section>
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="closeLightbox" aria-label="Close image">×</button><img id="lightboxImage" src="" alt="Expanded wedding artwork"></div>
+<footer>MADE WITH LOVE · KEERTHANA &amp; PARTHIBAN</footer>
+<script src="script.js"></script>
+</body></html>
